@@ -1,13 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginTop="45dp"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--此文件夹需要改-->
 
-    >
+    <TableRow>
 
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back4" />
 
+    </TableRow>
 
-</RelativeLayout>
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Breakfast"
+            android:textAllCaps="false"
+            android:layout_marginRight="30dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Lunch"
+            android:textAllCaps="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Dinner"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Snack"
+            android:textAllCaps="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView android:text="Cook Time" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="10" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="15" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="20" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+
+            android:text="Ingredient" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Chicken"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Beef"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Pork"
+            android:textAllCaps="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Seafood"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Vegatable/Food"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Rice/Noodles"
+            android:textAllCaps="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView android:text="Type" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="High Protein" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Low Fat" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Low Calorie" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="2"></TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Clear" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Confirm" />
+
+    </TableRow>
+</TableLayout>
