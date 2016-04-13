@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.yuexiao.myrecipe10.personal3">
+
+    <TextView
+        android:id="@+id/tv_person1_personinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Personal Info"
+        android:textColor="#000000"
+        android:textSize="30dp"
+
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:paddingLeft="40dp">
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <TextView android:layout_weight="1" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Occupation"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:layout_weight="2"
+                 />
+
+
+            <TextView android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <TextView android:layout_weight="1" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Exercise Type"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:layout_weight="2"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                 />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <TextView android:layout_weight="1" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Exercise Frequency"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:layout_weight="2"
+                 />
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                 />
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <TextView android:layout_weight="1" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Exercise Duration"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:layout_weight="2"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <TextView android:layout_weight="1" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Exercise Time"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:layout_weight="2"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+    <ImageButton
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/finish"
+        android:id="@+id/ib_personal3_finish"/>
+
+    <ImageButton
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/back"
+        android:id="@+id/ib_personal3_back"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aim_arr">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+    </string-array>
+
+    <string-array name="occupation_arr">
+        <item>学生</item>
+        <item>老师</item>
+        <item>户外</item>
+    </string-array>
+    <string-array name="exercise_type_arr">
+        <item>游泳</item>
+        <item>跳伞</item>
+        <item>慢跑</item>
+        <item>羽毛球</item>
+    </string-array>
+    <string-array name="exercise_frequency_arr">
+        <item>1 time</item>
+        <item>2 times</item>
+        <item>3 times</item>
+        <item>4 times</item>
+    </string-array>
+    <string-array name="exercise_duration_arr">
+        <item>1 month</item>
+        <item>2 months</item>
+        <item>3 months</item>
+        <item>4 months</item>
+    </string-array>
+    <string-array name="exercise_time_arr">
+        <item>30min</item>
+        <item>45min</item>
+        <item>1h</item>
+        <item>2h</item>
+    </string-array>
+</resources>

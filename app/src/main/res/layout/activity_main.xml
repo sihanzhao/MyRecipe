@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yuexiao.myrecipe10.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_activitymain_1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#336699"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_activitymain_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_editview"
+                android:completionThreshold="1"
+                android:hint="@string/search_hint"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="35dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/search_icon" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#336699"
+            >
+
+            <ImageView
+                android:id="@+id/iv_main_filter"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/filter_icon" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+        <!--<ImageSwitcher android:id="@+id/switcher"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--/>-->
+
+        <!--<Gallery android:id="@+id/gallery"-->
+            <!--android:background="#55000000"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+
+            <!--android:gravity="center_vertical"-->
+            <!--android:spacing="16dp"-->
+            <!--/>-->
+
+
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/sv_activitymain"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_below="@+id/ll_activitymain_1"
+
+
+        >
+
+    </ScrollView>
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:layout_below="@id/sv_activitymain"-->
+        <!--android:background="#504e4e" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_activitymain_2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/sv_activitymain">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/plate" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/plan" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/alarm" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/person" />
+
+
+    </LinearLayout>
+</RelativeLayout>

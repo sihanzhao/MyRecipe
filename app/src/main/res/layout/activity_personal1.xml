@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.yuexiao.myrecipe10.personal1">
+
+    <TextView
+        android:id="@+id/tv_person1_personinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:typeface="serif"
+        android:text="Personal Information"
+        android:textColor="#000000"
+        android:textSize="30dp"
+
+        />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:paddingLeft="40dp">
+
+        <TableRow
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <TextView android:layout_weight="1" />
+
+            <TextView
+
+                android:id="@+id/tv_person1_gender"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gender"
+                android:textColor="#000000"
+
+                />
+
+            <RadioGroup
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_person1_gender"
+                android:layout_toRightOf="@id/tv_person1_gender"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+            </RadioGroup>
+
+            <TextView android:layout_weight="1" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <TextView android:layout_weight="1" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Age"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_weight="0"
+                android:background="@drawable/round_editview"
+                android:singleLine="true"
+
+                />
+
+            <TextView android:layout_weight="3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <TextView android:layout_weight="1" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Height"
+                android:textColor="#000000"
+
+                />
+
+            <EditText
+                android:layout_weight="0"
+                android:background="@drawable/round_editview" />
+
+            <TextView
+                android:layout_weight="3"
+                android:paddingLeft="10dp"
+                android:text="cm" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView android:layout_weight="1" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Weight"
+                android:textColor="#000000"
+
+                />
+
+            <EditText
+                android:layout_weight="0"
+                android:background="@drawable/round_editview" />
+
+            <TextView
+                android:layout_weight="3"
+                android:paddingLeft="10dp"
+                android:text="kg" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ib_personal1_next"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/tv_person1_personinfo"
+        android:layout_alignLeft="@+id/tv_person1_personinfo"
+        android:layout_alignStart="@+id/tv_person1_personinfo"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />
+
+
+</RelativeLayout>
